@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC</title>
+</head>
+
+<body>
+  
+<h1>IMC</h1>
+
+ <h2>Para sua Saude, pesar-se deve Você</h2>
+ <div>
+<label for="peso">peso (kg)</label>
+<input type="number" id="peso" name="peso">
+<br>
+
+<label for="altura">altura</label>
+<input type="number" name="altura" id="altura">
+<br>
+
+<button onclick="calcularIMC()">calcular IMC</button>
+<br>
+<p>Seu Índice de massa corporal é: <span id="resultado"></span></p>
+
+<script>
+  function calcularIMC(){
+    const peso = window.document.getElementById("peso").value;
+    const altura = window.document.getElementById("altura").value;
+    const IMC = peso  / (altura **2)
+    document.getElementById("resultado").textContent= IMC.toFixed(2)
+  }
+
+let tituloDinamico = document.title;
+window.addEventListener("blur", ()=>{
+  document.title = "Que a Força esteja com Você"
+})
+
+window.addEventListener("focus" ,() =>{
+  document.title = tituloDinamico
+})
+
+</script>
+
+</div>
+
+
+<footer>Erick Garcia </footer>
+
+
+</body>
+
+
+
+</html>

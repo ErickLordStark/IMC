@@ -1,0 +1,63 @@
+
+@font-face {
+  font-family: face;
+  src: url(Harukaze.ttf);
+}
+
+body{
+  background-image: url(koji-tanaka-1.jpg);
+  background-size: cover;
+  font-family: face;
+  
+
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-family: face;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  font-family: face;
+  font-size: 50px;
+}
+
+div{
+  text-align: center;
+  margin-top: 10%;
+  font-size: 35px;
+  color: white;
+
+}
+
+button{
+  font-size: 25px;
+  background-color: #24543a;
+  border-radius: 10px;
+  font-family: face;
+  border: none;
+  color: white;
+  
+}
+
+label{
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+footer{
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 55px;
+  font-family: face;
+  
+}
+
+p{
+  font-size: 40px;
+}
